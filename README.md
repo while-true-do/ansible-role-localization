@@ -1,5 +1,5 @@
 # Ansible Role: localization
-| A Role to set the localization and keymap.
+| A role to set the localization and keymap.
 
 ## Installation
 

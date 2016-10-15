@@ -3,7 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: daniel@while-true-do.org
-  description: A Role to set the localization and keymap.
+  description: A role to set the localization and keymap.
 
   issue_tracker_url: https://github.com/while-true-do/ansible-role-localization/issues
   github_branch: master
