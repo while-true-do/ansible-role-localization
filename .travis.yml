@@ -23,7 +23,7 @@ install:
 
 # Run the tests
 script:
-  - chmod tests/test.sh
+  - chmod +x tests/test.sh
   - tests/test.sh
 
 notifications:
