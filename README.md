@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/while-true-do/ansible-role-localization.svg?branch=master)](https://travis-ci.org/while-true-do/ansible-role-localization)
+
 # Ansible Role: localization
 | A role to set the localization and keymap.
 
