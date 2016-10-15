@@ -21,6 +21,9 @@ install:
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
+  # Link github repo to ansible-galaxy name
+  - ln -s  $PWD ../while-true-do.localization
+
 # Run the tests
 script:
   - chmod +x tests/test.sh
