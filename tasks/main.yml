@@ -1,0 +1,32 @@
+---
+# FIXME: No ansible fact present for current keymap.
+- name: Fetch localization facts
+  shell: localectl status | grep 'VC Keymap' | grep '{{ locale_keymap }}'
+  ignore_errors: yes
+  register: keymap_status
+  changed_when: keymap_status.rc != 0
+  failed_when: keymap_status.rc != 1 and keymap_status.rc != 0
+  tags:
+    - localization
+    - locale
+    - config
+
+- name: Set localization
+  template:
+    src: locale.conf.j2
+    dest: /etc/locale.conf
+    owner: root
+    group: root
+    mode: 0644
+  tags:
+    - localization
+    - locale
+    - config
+
+- name: Set keymap
+  command: localectl set-keymap '{{ locale_keymap }}'
+  when: keymap_status.rc == 1
+  tags:
+    - localization
+    - keyboard
+    - config

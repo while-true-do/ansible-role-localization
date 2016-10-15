@@ -1,0 +1,17 @@
+---
+locale_lang: 'en_US.utf8'
+locale_keymap: 'us'
+
+# Unset variables, but you can use them in your tasks, vars or so
+locale_lc_address: ''
+locale_lc_collate: ''
+locale_lc_ctype: ''
+locale_lc_identification: ''
+locale_lc_measurement: ''
+locale_lc_messages: ''
+locale_lc_monetary: ''
+locale_lc_name: ''
+locale_lc_numeric: ''
+locale_lc_paper: ''
+locale_lc_telephone: ''
+locale_lc_time: ''
