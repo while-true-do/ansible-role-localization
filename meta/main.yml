@@ -1,8 +1,9 @@
 dependencies: []
 
 galaxy_info:
-  author: daniel@while-true-do.org
+  author: while-true-do.org
   description: A role to set the localization and keymap.
+  company: while-true-do.org
 
   issue_tracker_url: https://github.com/while-true-do/ansible-role-localization/issues
   github_branch: master
@@ -21,7 +22,5 @@ galaxy_info:
 
   galaxy_tags:
     - locale
-    - config
-    - common
     - keyboard
     - localization

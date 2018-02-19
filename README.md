@@ -3,23 +3,31 @@
 # Ansible Role: localization
 | A role to set the localization and keymap.
 
+## Motivation
+
+Having a proper configuration of keymap and localization is a very common task.
+
 ## Installation
 
-Galaxy Link: <https://galaxy.ansible.com/while-true-do/localization>
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do/localization)
 
 ```
 ansible-galaxy install while-true-do.localization
 ```
 
-Github Link: <https://github.com/while-true-do/ansible-role-localization>
+Install from [Github](https://github.com/while-true-do/ansible-role-localization)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-localization while-true-do.localization
+git clone https://github.com/while-true-do/ansible-role-localization.git while-true-do.localization
 ```
 
 ## Requirements
 
-None.
+Used Modules:
+
+-  [command_module](http://docs.ansible.com/ansible/latest/command_module.html)
+-  [shell_module](http://docs.ansible.com/ansible/latest/shell_module.html)
+-  [template_module](http://docs.ansible.com/ansible/latest/template_module.html)
 
 ## Dependencies
 
@@ -27,24 +35,23 @@ None.
 
 ## Role Variables
 
-```
-# defaults/main.yml
-locale_lang: en_US.utf8
-locale_keymap: us
+```yaml
+wtd_locale_lang: "en_US.utf8"
+wtd_locale_keymap: "us"
 
 # Unset variables, but you can use them in your tasks, vars or so
-# locale_lc_address: ''
-# locale_lc_collate: ''
-# locale_lc_ctype: ''
-# locale_lc_identification: ''
-# locale_lc_measurement: ''
-# locale_lc_messages: ''
-# locale_lc_monetary: ''
-# locale_lc_name: ''
-# locale_lc_numeric: ''
-# locale_lc_paper: ''
-# locale_lc_telephone: ''
-# locale_lc_time: ''
+wtd_locale_lc_address: ""
+wtd_locale_lc_collate: ""
+wtd_locale_lc_ctype: ""
+wtd_locale_lc_identification: ""
+wtd_locale_lc_measurement: ""
+wtd_locale_lc_messages: ""
+wtd_locale_lc_monetary: ""
+wtd_locale_lc_name: ""
+wtd_locale_lc_numeric: ""
+wtd_locale_lc_paper: ""
+wtd_locale_lc_telephone: ""
+wtd_locale_lc_time: ""
 ```
 
 ## Example Playbook
@@ -57,28 +64,27 @@ Simple Example:
   - { role: while-true-do.localization }
 ```
 
-Advanced Example:
+## Testing
 
-```
-- hosts: servers
-  roles:
-  - { role: while-true-do.localization, locale_lang: de_DE.utf8, locale_lc_name: de_DE.utf8, locale_keymap: de-nodeadkeys }
-```
+All tests should be put in [test directory](./tests/).
+
+## Contribute / Bugs
+
+Thank you so much for considering to contribute. Every contribution helps us.
+We are really happy, when somebody is joining the hard work. Please have a look
+at the links first.
+
+-   [Contribution Guidelines](./docs/CONTRIBUTING.md)
+-   [Create an issue or Request](https://github.com/while-true-do/ansible-role-localization/issues)
+-   [See who was contributing already](https://github.com/while-true-do/ansible-role-localization/graphs/contributors)
 
 ## License
 
 This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-3-Clause).
 
-## Contribute / Bugs
-
-**bug reports:** <https://github.com/while-true-do/ansible-role-localization/issues>
-
-**contributers:** <https://github.com/while-true-do/ansible-role-localization/graphs/contributors>
-
 ## Author Information
 
-**blog:** <https://blog.while-true-do.org>
+Blog: [blog.while-true-do.org](https://blog.while-true-do.org)
 
-**github:** <https://github.com/daniel-wtd>
+Mail: [hello@while-true-do.org](mailto:hello@while-true-do.org)
 
-**contact:** [mail@while-true-do.org](mailto:mail@while-true-do.org)
