@@ -1,6 +1,6 @@
 ---
 - name: Fetch localization facts
-  shell: localectl status | grep "VC Keymap" | grep -q "{{ locale_keymap }}"
+  shell: localectl status | grep "VC Keymap" | grep -q "{{ wtd_locale_keymap }}"
   ignore_errors: yes
   register: wtd_keymap_status
   changed_when: wtd_keymap_status.rc != 0
@@ -21,8 +21,8 @@
     - locale
 
 - name: Set keymap
-  command: localectl set-keymap "{{ locale_keymap }}"
-  when: keymap_status.rc == 1
+  command: localectl set-keymap "{{ wtd_locale_keymap }}"
+  when: wtd_keymap_status.rc == 1
   tags:
     - localization
     - keyboard
