@@ -1,17 +1,17 @@
 ---
-locale_lang: 'en_US.utf8'
-locale_keymap: 'us'
+wtd_locale_lang: "en_US.utf8"
+wtd_locale_keymap: "us"
 
 # Unset variables, but you can use them in your tasks, vars or so
-locale_lc_address: ''
-locale_lc_collate: ''
-locale_lc_ctype: ''
-locale_lc_identification: ''
-locale_lc_measurement: ''
-locale_lc_messages: ''
-locale_lc_monetary: ''
-locale_lc_name: ''
-locale_lc_numeric: ''
-locale_lc_paper: ''
-locale_lc_telephone: ''
-locale_lc_time: ''
+wtd_locale_lc_address: ""
+wtd_locale_lc_collate: ""
+wtd_locale_lc_ctype: ""
+wtd_locale_lc_identification: ""
+wtd_locale_lc_measurement: ""
+wtd_locale_lc_messages: ""
+wtd_locale_lc_monetary: ""
+wtd_locale_lc_name: ""
+wtd_locale_lc_numeric: ""
+wtd_locale_lc_paper: ""
+wtd_locale_lc_telephone: ""
+wtd_locale_lc_time: ""
