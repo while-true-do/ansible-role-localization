@@ -1,6 +1,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: localization
   author: while-true-do.org
   description: A role to set the localization and keymap.
   company: while-true-do.org
