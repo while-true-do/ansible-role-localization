@@ -9,16 +9,16 @@ Having a proper configuration of keymap and localization is a very common task.
 
 ## Installation
 
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while-true-do/localization)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do/localization)
 
 ```
-ansible-galaxy install while-true-do.localization
+ansible-galaxy install while_true_do.localization
 ```
 
 Install from [Github](https://github.com/while-true-do/ansible-role-localization)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-localization.git while-true-do.localization
+git clone https://github.com/while-true-do/ansible-role-localization.git while_true_do.localization
 ```
 
 ## Requirements
@@ -61,7 +61,7 @@ Simple Example:
 ```
 - hosts: servers
   roles:
-  - { role: while-true-do.localization }
+  - { role: while_true_do.localization }
 ```
 
 ## Testing

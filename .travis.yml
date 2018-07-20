@@ -23,8 +23,8 @@ install:
   # Check ansible version
   - ansible --version
 
-# Link github repo to ansible-galaxy name
-  - ln -s  $PWD ../while-true-do.localization
+  # Link github repo to ansible-galaxy name
+  - ln -s  $PWD ../while_true_do.localization
 
 # Run the tests
 script:
